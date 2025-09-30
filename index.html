@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maaf ya Ayang 💕</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="heart-container">❤️</div>
+        
+        <h1>Maaf ya Ayang</h1>
+        <div class="subtitle">Salma Tersayang 💕</div>
+        
+        <div class="photo-frame">
+            <!-- Ganti src dengan path foto kamu -->
+            <img src="berdua.jpg" alt="Foto bersama" style="display: none;">
+            <div class="placeholder"></div>
+        </div>
+
+        <div class="message">
+            <p>Hai <span class="highlight">Salma</span>, sayangku... 💖</p>
+            
+            <p>Aku mau minta maaf yaa sayangg, hari ini aku gakbisa ketemu ayangg sesuai jadwal. Ternyata dosen kasih info kalau <span class="highlight">kuliahnya diliburkan hari ini</span>. 😔</p>
+            
+            <p>Ttp meskipun aku gk kuliah, <span class="highlight">>aku mau jemput ayangg yaa</span> Aku pengen banget bisa nemenin dan nganterin ayangg pulang setelah beres kuliah hari ini. 🥰</p>
+            
+            <p>nanti kita pulang bareng 💕</p>
+        </div>
+
+        <div class="emoji-line">💑 💝 💖 💗 💓</div>
+
+        <div class="footer">
+            <br>
+            Pacarmu yg selalu sayangg bangett bangett bangettt  ❤️
+        </div>
+
+        <div class="love-decoration">
+            💕 💖 💕 💖 💕
+        </div>
+    </div>
+
+    <script>
+        // Script untuk menampilkan foto jika ada
+        const img = document.querySelector('.photo-frame img');
+        const placeholder = document.querySelector('.placeholder');
+        
+        img.onload = function() {
+            if (img.src && img.src !== window.location.href) {
+                img.style.display = 'block';
+                placeholder.style.display = 'none';
+            }
+        };
+    </script>
+</body>
+</html>
